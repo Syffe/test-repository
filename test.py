@@ -1,4 +1,3 @@
 
-
 def print_toto():
-    print("totot")
+    print("toto")
