@@ -6,7 +6,7 @@ queue_rules:
 pull_request_rules:
   - name: automatic merge
     conditions:
-      - base=main
+      - base=master
       - "#changes-requested-reviews-by=0"
       - "#review-threads-unresolved=0"
       - "#review-requested=0"
