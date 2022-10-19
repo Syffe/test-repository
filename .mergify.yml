@@ -1,0 +1,17 @@
+queue_rules:
+  - name: default
+    conditions:
+      - schedule=Mon-Fri 09:00-17:30[Europe/Paris]
+
+pull_request_rules:
+  - name: automatic merge
+    conditions:
+      - base=main
+      - "#changes-requested-reviews-by=0"
+      - "#review-threads-unresolved=0"
+      - "#review-requested=0"
+      - label=default
+    actions:
+      queue:
+        name: default
+        method: merge
