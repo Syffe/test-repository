@@ -6,6 +6,10 @@ def print_toto():
 
 def print_titi():
     print("titi")
+
+def print_trotro():
+    print("trotro")
+    
     
 #blablabla
 #motdujour
